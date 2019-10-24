@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<config>
+    <!-- 生成类型 1-根据包地址生成，包下所有类的接口 2-自定义类生成 -->
+    <generateType value="1"/>
+
+    <!-- 项目下类扫描路径（绝对路径）, 支持多个 pathPrefix 支持公共前缀地址匹配 -->
+    <projectScanPaths pathPrefix="/Users/mengqiang/project/workproject">
+        <path value="test-auth"/>
+    </projectScanPaths>
+
+    <!-- 包文件夹地址（绝对路径,生成类型为1时必填） -->
+    <apiPackagePath
+            value="/Users/mengqiang/project/Gitee/api-generate-demo/api-generate-web02/src/main/java/com/example/controller/test2"/>
+
+    <!-- 类文件地址（绝对路径,生成类型为2时必填）pathPrefix 支持公共前缀地址匹配 -->
+    <apiClassPaths pathPrefix="">
+        <path value="/Users/mengqiang/project/Gitee/api-generate-demo/api-generate-web02/src/main/java/com/example/controller/demo/UserInfoController.java"/>
+    </apiClassPaths>
+
+
+    <!-- 包文件夹地址（绝对路径,生成类型为1时必填） -->
+    <apiPackagePath value=""/>
+
+    <!-- 类文件地址（绝对路径,生成类型为2时必填）pathPrefix 支持公共前缀地址匹配 -->
+    <apiClassPaths
+            pathPrefix="/Users/mengqiang/project/workproject/test-auth/test-authcore/lifecircle-authcore-facade/src/main/java/com/test/authcore/">
+        <path value="UserFacade.java"/>
+
+        <path value="AuthFacade.java"/>
+
+        <path value="OrganizeFacade.java"/>
+
+        <path value="UserFacade.java"/>
+
+        <path value="RoleFacade.java"/>
+
+        <path value="GrantFacade.java"/>
+
+    </apiClassPaths>
+
+
+    <!-- 生成文件地址(默认：当前目录) -->
+    <generateFilePath value=""/>
+
+    <!-- 参数类型 1-默认,2-驼峰转下划线 -->
+    <apiParamType value="1"/>
+
+    <!-- 是否生成JSON示例 1-是,2-否 默认1 -->
+    <generateJsonFlag value="1"/>
+
+    <!-- 排除参数名配置（支持多个） -->
+    <apiExcludeParamNames>
+        <paramName value=""/>
+    </apiExcludeParamNames>
+
+    <!-- 排除参数全类名配置（支持多个） -->
+    <apiExcludeParamClassNames>
+        <paramClassName value=""/>
+    </apiExcludeParamClassNames>
+
+    <!-- 日志级别 info , debug 默认 info -->
+    <logLevel value="debug"/>
+
+    <!-- 项目接口访问根路径 默认空 -->
+    <projectRootUrl value=""/>
+
+    <!-- 开放接口注解类配置, annotationFieldName 默认 "method" -->
+    <gateWayField annotationName="" annotationFieldName="method"/>
+
+    <!-- 自定义顶级对象属性 -->
+    <apiRootResField>
+        <field name="success" typeClassName="java.lang.Boolean" desc="请求是否成功" isParent="0"/>
+        <field name="data" typeClassName="java.lang.Object" desc="" isParent="1"/>
+        <field name="errorCode" typeClassName="java.lang.String" desc="错误码" isParent="0"/>
+        <field name="errorMsg" typeClassName="java.lang.String" desc="错误信息" isParent="0"/>
+    </apiRootResField>
+
+
+    <!-- 请求 contentType -->
+    <contentType value="application/x-www-form-urlencoded"/>
+
+    <!-- 头信息 -->
+    <apiHeaderField>
+        <field name="token" type="String" desc="当前登录用户token" isRequired="1"/>
+    </apiHeaderField>
+
+    <!-- 是否展示接口路径地址 -->
+    <interfacePathShowFlag value="1"/>
+
+</config>

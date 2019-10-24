@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<config>
+    <!-- 生成类型 1-根据包地址生成，包下所有类的接口 2-自定义类生成 -->
+    <generateType value="2"/>
+
+    <!-- 项目下类扫描路径（绝对路径）, 支持多个 pathPrefix 支持公共前缀地址匹配 -->
+    <projectScanPaths>
+        <path value="/Users/mengqiang/project/workproject/project"/>
+    </projectScanPaths>
+
+    <!-- 包文件夹地址（绝对路径,生成类型为1时必填） -->
+    <apiPackagePath value=""/>
+
+    <!-- 类文件地址（绝对路径,生成类型为2时必填）pathPrefix 支持公共前缀地址匹配 -->
+    <apiClassPaths>
+        <path value="/Users/mengqiang/project/workproject/lifecircle-auth/lifecircle-authgw/lifecircle-authgw-web/src/main/java/com/fshows/lifecircle/authgw/web/controller/auth/AuthController.java"/>
+    </apiClassPaths>
+
+    <!-- 排除参数名配置（支持多个） -->
+    <apiExcludeParamNames>
+        <paramName value=""/>
+    </apiExcludeParamNames>
+
+    <!-- 排除参数全类名配置（支持多个） -->
+    <apiExcludeParamClassNames>
+        <paramClassName value="com.fshows.finance.business.result.admin.permission.ApplyAuthResult"/>
+    </apiExcludeParamClassNames>
+
+
+    <!-- 日志级别 info , debug 默认 info -->
+    <logLevel value="info"/>
+
+
+</config>
