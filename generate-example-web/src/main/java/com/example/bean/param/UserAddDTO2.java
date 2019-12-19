@@ -8,7 +8,7 @@ import lombok.Data;
 /**
  * 人员信息新增参数
  *
- * @author 码农猿
+ * @author mengqiang
  */
 @Data
 public class UserAddDTO2 extends BaseOperateModel {

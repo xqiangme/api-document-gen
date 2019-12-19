@@ -9,7 +9,7 @@ import java.io.Serializable;
 /**
  * 分页基础model
  *
- * @author 码农猿
+ * @author mengqiang
  */
 public class BasePageModel implements Serializable {
     private static final long serialVersionUID = -1L;

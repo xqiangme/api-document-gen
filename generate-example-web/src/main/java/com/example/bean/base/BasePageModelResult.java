@@ -11,7 +11,7 @@ import java.util.List;
 /**
  * 分页返回基础类
  *
- * @author 码农猿
+ * @author mengqiang
  * @version BasePageModelResult.java, v 3.0 2019-01-14 19:31
  */
 public class BasePageModelResult<T> extends BasePageModel {

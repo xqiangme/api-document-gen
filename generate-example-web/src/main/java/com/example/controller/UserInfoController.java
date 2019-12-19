@@ -14,7 +14,7 @@ import javax.validation.Valid;
 /**
  * 人员管理接口
  *
- * @author 码农猿
+ * @author mengqiang
  * @version UserInfoController.java
  */
 @RestController
@@ -35,7 +35,7 @@ public class UserInfoController {
     /**
      * 删除人员
      *
-     * @author 码农猿
+     * @author mengqiang
      */
     @DeleteMapping("/delete-user")
     public Response deleteUser1(@Valid @RequestBody UserDeleteDTO deleteDTO) {
@@ -46,7 +46,7 @@ public class UserInfoController {
     /**
      * 修改人员
      *
-     * @author 码农猿
+     * @author mengqiang
      */
     @PutMapping("/update-user")
     public Response updateUser1(@Valid @RequestBody UserUpdateDTO userUpdateDTO) {
@@ -58,7 +58,7 @@ public class UserInfoController {
     /**
      * 人员-分页查询
      *
-     * @author 码农猿
+     * @author mengqiang
      */
     @PostMapping(value = "/list-page")
     public Response<BasePageModelResult<UserDetailResult>> listPage1(@Valid @RequestBody UserPageQueryDTO pageQueryDTO) {
@@ -68,7 +68,7 @@ public class UserInfoController {
     /**
      * 多层级参数
      *
-     * @author 码农猿
+     * @author mengqiang
      */
     @PostMapping("/add-user-many")
     public Response addUser2(@Valid @RequestBody UserAddManyDTO addManyDTO) {
@@ -79,7 +79,7 @@ public class UserInfoController {
     /**
      * 多层级出参
      *
-     * @author 码农猿
+     * @author mengqiang
      */
     @GetMapping("/get-user")
     public Response<UserDetailManyResult> getUser2(@RequestParam("userId") String userId) {
@@ -90,7 +90,7 @@ public class UserInfoController {
     /**
      * 添加人员(测试参数无注释)
      *
-     * @author 码农猿
+     * @author mengqiang
      */
     @PostMapping("/add-user2")
     public void addUser3(@Valid @RequestBody UserAddDTO2 userAddDTO) {

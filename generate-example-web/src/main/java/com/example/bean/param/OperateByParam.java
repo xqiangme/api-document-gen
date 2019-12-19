@@ -8,7 +8,7 @@ import org.hibernate.validator.constraints.NotBlank;
 /**
  * 操作人参数
  *
- * @author 码农猿
+ * @author mengqiang
  */
 @Data
 public class OperateByParam {

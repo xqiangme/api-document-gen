@@ -7,7 +7,7 @@ import java.io.Serializable;
 /**
  * 统一返回对象
  *
- * @author 码农猿
+ * @author mengqiang
  */
 public class Response<T> implements Serializable {
 

@@ -9,7 +9,7 @@ import org.hibernate.validator.constraints.NotBlank;
 /**
  * 人员信息删除参数
  *
- * @author 码农猿
+ * @author mengqiang
  */
 @Data
 public class UserDetailDTO extends BaseOperateModel {

@@ -14,7 +14,7 @@ import javax.validation.Valid;
 /**
  * 菜单管理接口
  *
- * @author 码农猿
+ * @author mengqiang
  */
 @RestController
 @RequestMapping("/menu")
@@ -23,7 +23,7 @@ public class MenuInfoController {
     /**
      * 添加菜单
      *
-     * @author 码农猿
+     * @author mengqiang
      */
     @PostMapping(value = "/add-menu")
     public Response addMenu(@Valid @RequestBody MenuAddParam addParam) {

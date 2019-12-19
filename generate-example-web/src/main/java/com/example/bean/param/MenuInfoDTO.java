@@ -7,7 +7,7 @@ import lombok.Data;
 /**
  * 菜单参数
  *
- * @author 码农猿
+ * @author mengqiang
  * @version MenuInfoDTO.java, v 0.1
  */
 @Data

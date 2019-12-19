@@ -10,7 +10,7 @@ import java.io.Serializable;
 /**
  * 基础 model 带有操作人信息
  *
- * @author 码农猿
+ * @author mengqiang
  */
 @Data
 public class BaseOperateModel implements Serializable {

@@ -8,7 +8,7 @@ import java.io.Serializable;
 /**
  * 统一参数基础抽象类
  *
- * @author 码农猿
+ * @author mengqiang
  */
 public class BaseDTO implements Serializable {
 

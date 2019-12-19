@@ -10,7 +10,7 @@ import javax.validation.constraints.NotNull;
 /**
  * 分页统一参数基础抽象类
  *
- * @author 码农猿
+ * @author mengqiang
  */
 public class BasePageDTO extends BaseDTO {
 

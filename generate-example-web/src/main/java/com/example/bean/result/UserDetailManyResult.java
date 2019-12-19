@@ -11,7 +11,7 @@ import java.util.List;
 /**
  * 人员信息详情返回参数
  *
- * @author 码农猿
+ * @author mengqiang
  */
 @Data
 public class UserDetailManyResult extends BaseModel {

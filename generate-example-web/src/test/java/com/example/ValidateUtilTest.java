@@ -8,7 +8,7 @@ import com.example.util.ValidateUtil;
 /**
  * 自定义工具-执行校验
  *
- * @author 码农猿
+ * @author mengqiang
  */
 public class ValidateUtilTest {
     public static void main(String[] args) {

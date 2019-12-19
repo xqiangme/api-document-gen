@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 /**
  * 全局统一异常处理
  *
- * @author 码农猿
+ * @author mengqiang
  */
 @ControllerAdvice
 public class ExceptionAdvice {

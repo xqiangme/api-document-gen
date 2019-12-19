@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * 分页返回基础类
  *
- * @author 码农猿
+ * @author mengqiang
  */
 public class ListItemResponse<T> extends BasePageModel {
 

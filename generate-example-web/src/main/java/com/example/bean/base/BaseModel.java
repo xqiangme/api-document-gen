@@ -9,7 +9,7 @@ import java.io.Serializable;
 /**
  * 基础 model
  *
- * @author 码农猿
+ * @author mengqiang
  * @version BaseResult.java, v 3.0 2019-01-07 22:17
  */
 @Data

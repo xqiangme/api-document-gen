@@ -12,7 +12,7 @@ import javax.validation.constraints.NotNull;
 /**
  * 人员信息修改参数
  *
- * @author 码农猿
+ * @author mengqiang
  */
 @Data
 public class UserUpdateDTO extends BaseOperateModel {

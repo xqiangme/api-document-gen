@@ -15,7 +15,7 @@ import java.io.Serializable;
 /**
  * 菜单信息新增参数
  *
- * @author 码农猿
+ * @author mengqiang
  */
 @Data
 public class MenuAddParam implements Serializable {

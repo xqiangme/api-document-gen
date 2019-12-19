@@ -9,7 +9,7 @@ import java.util.Date;
 /**
  * 人员信息详情返回参数
  *
- * @author 码农猿
+ * @author mengqiang
  */
 @Data
 public class UserDetailResult extends BaseModel {

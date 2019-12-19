@@ -9,7 +9,7 @@ import java.util.List;
 /**
  * 角色参数
  *
- * @author 码农猿
+ * @author mengqiang
  * @version RoleDTO.java, v 0.1
  */
 @Data

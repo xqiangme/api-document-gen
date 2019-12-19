@@ -4,7 +4,7 @@
     <generateType value="2"/>
     
     <!-- 项目下类扫描路径（绝对路径）, 支持多个 pathPrefix 支持公共前缀地址匹配 -->
-    <projectScanPaths pathPrefix="/Users/mengqiang/project/Github/api-document-gen">
+    <projectScanPaths pathPrefix="/Users/mengqiang/project/Github/api-document-gen/">
         <path value="/generate-example-web"/>
     </projectScanPaths>
 
