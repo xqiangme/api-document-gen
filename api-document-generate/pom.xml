@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.my.api.generate</groupId>
+    <groupId>com.tool.api.generate</groupId>
     <artifactId>api-document-generate</artifactId>
     <version>1.0</version>
 
@@ -100,7 +100,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>com.my.api.generate.main.ApiGenerateMain</mainClass>
+                            <mainClass>com.tool.api.generate.main.ApiGenerateMain</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>

@@ -5,25 +5,17 @@
 
     <!-- 项目下类扫描路径（绝对路径）, 支持多个 pathPrefix 支持公共前缀地址匹配 -->
     <projectScanPaths pathPrefix="/Users/mengqiang/project/workproject">
-        <path value="test-auth"/>
+        <path value="xxxl"/>
+        <path value="lifecircle-auth222"/>
+
     </projectScanPaths>
 
-    <!-- 包文件夹地址（绝对路径,生成类型为1时必填） -->
-    <apiPackagePath
-            value="/Users/mengqiang/project/Gitee/api-generate-demo/api-generate-web02/src/main/java/com/example/controller/test2"/>
-
-    <!-- 类文件地址（绝对路径,生成类型为2时必填）pathPrefix 支持公共前缀地址匹配 -->
-    <apiClassPaths pathPrefix="">
-        <path value="/Users/mengqiang/project/Gitee/api-generate-demo/api-generate-web02/src/main/java/com/example/controller/demo/UserInfoController.java"/>
-    </apiClassPaths>
-
 
     <!-- 包文件夹地址（绝对路径,生成类型为1时必填） -->
-    <apiPackagePath value=""/>
+    <apiPackagePath  value=""/>
 
     <!-- 类文件地址（绝对路径,生成类型为2时必填）pathPrefix 支持公共前缀地址匹配 -->
-    <apiClassPaths
-            pathPrefix="/Users/mengqiang/project/workproject/test-auth/test-authcore/lifecircle-authcore-facade/src/main/java/com/test/authcore/">
+    <apiClassPaths pathPrefix="/Users/mengqiang/project/workproject/demo">
         <path value="UserFacade.java"/>
 
         <path value="AuthFacade.java"/>

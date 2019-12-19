@@ -3,32 +3,61 @@
     <!-- 生成类型 1-根据包地址生成，包下所有类的接口 2-自定义类生成 -->
     <generateType value="2"/>
 
-    <!-- 项目下类扫描路径（绝对路径）, 支持多个 pathPrefix 支持公共前缀地址匹配 -->
+    <!-- 项目下类扫描路径（绝对路径）, 支持多个 -->
     <projectScanPaths>
-        <path value="/Users/mengqiang/project/workproject/project"/>
+        <path value="/Users/mengqiang/project/fshows/crm/lifecircle-crmgw"/>
+
     </projectScanPaths>
 
     <!-- 包文件夹地址（绝对路径,生成类型为1时必填） -->
     <apiPackagePath value=""/>
 
-    <!-- 类文件地址（绝对路径,生成类型为2时必填）pathPrefix 支持公共前缀地址匹配 -->
-    <apiClassPaths>
-        <path value="/Users/mengqiang/project/workproject/lifecircle-auth/lifecircle-authgw/lifecircle-authgw-web/src/main/java/com/fshows/lifecircle/authgw/web/controller/auth/AuthController.java"/>
+    <!-- 类文件地址（绝对路径,生成类型为2时必填）-->
+    <apiClassPaths
+            pathPrefix="/Users/mengqiang/project/fshows/crm/lifecircle-crmgw/lifecircle-crmgw-service/src/main/java/com/fshows/lifecircle/crmgw/service/api">
+        <path value="DataModuleHomeApi.java" method="listDayTradeDetail"/>
+        <path value="DataModuleShowDetailApi.java" method="listPageStoreDetail,listUserOption"/>
+
     </apiClassPaths>
+
+    <!-- 生成文件地址(默认：jar所在当前目录) -->
+    <generateFilePath value="/Users/mengqiang/genarate-tool/api-generate-tool/generate/crm/lifecircle-crmgw"/>
 
     <!-- 排除参数名配置（支持多个） -->
     <apiExcludeParamNames>
-        <paramName value=""/>
+        <paramName value="sysCode"/>
+        <paramName value="nonce"/>
     </apiExcludeParamNames>
 
     <!-- 排除参数全类名配置（支持多个） -->
     <apiExcludeParamClassNames>
-        <paramClassName value="com.fshows.finance.business.result.admin.permission.ApplyAuthResult"/>
+        <paramClassName value=""/>
     </apiExcludeParamClassNames>
 
+    <!-- 开放接口注解类配置, annotationFieldName 默认 "method" -->
+    <gateWayField annotationName="com.fshows.fsframework.core.annotation.LifecircleApi" annotationFieldName="name"/>
 
-    <!-- 日志级别 info , debug 默认 info -->
-    <logLevel value="info"/>
+    <!-- 请求 contentType
+     <contentType value="application/x-www-form-urlencoded"/>  -->
 
 
+    <!-- 自定义顶级对象属性 -->
+    <apiRootResField>
+        <field name="success" typeClassName="java.lang.Boolean" desc="请求是否成功" isParent="0"/>
+        <field name="data" typeClassName="java.lang.Object" desc="" isParent="1"/>
+        <field name="errorCode" typeClassName="java.lang.String" desc="错误码" isParent="0"/>
+        <field name="errorMsg" typeClassName="java.lang.String" desc="错误信息" isParent="0"/>
+    </apiRootResField>
+
+
+    <!-- 排除参数名配置（支持多个） -->
+    <apiExcludeParamNames>
+        <paramName value="currentUserIdxx"/>
+    </apiExcludeParamNames>
+
+    <!-- 头信息
+      <apiHeaderField>
+          <field name="token" type="String" desc="当前登录用户token" isRequired="1"/>
+      </apiHeaderField>
+     -->
 </config>
