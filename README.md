@@ -1,9 +1,8 @@
 # api-document-gen
-详细介绍请参考 博客 https://blog.csdn.net/qq_38011415/article/details/102734266
+博客地址 https://blog.csdn.net/qq_38011415/article/details/102734266
 
 本文主要分享一个基于个人兴趣，旨在提高工作效率，开发了一个基于文档注释，接口文档生成工具，欢迎大佬指点。
 
-源码以及使用demo地址 ：[传送门](https://github.com/mengq0815/api-document-gen)
 <a name="9be6bd22"></a>
 # 1.前置介绍
 <a name="5d4ec228"></a>
